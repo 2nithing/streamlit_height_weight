@@ -10,4 +10,4 @@ with st.form("myform"):
 if submitted:
         model = pickle.load(open('./model.pkl','rb'))
         weight = model.predict([[height]])
-        st.write(f"weight value is **{round(weight[0],2)}** pounds")
+        st.write(f"Expected weight value is **{round(weight[0],2)}** pounds")
